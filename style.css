@@ -1,0 +1,112 @@
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Big Shoulders Display', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 1em;
+    margin: 70px auto 30px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+    padding: 2em;
+}
+
+.img-position {
+    width: 50px;
+}
+
+.card-accent {
+    background: hsl(31, 77%, 52%);
+}
+
+.card-light {
+    background: hsl(184, 100%, 22%);
+}
+
+.card-dark {
+    background: hsl(179, 100%, 13%);
+}
+
+/* BUTTONS */
+.btn {
+    margin: 1em 0;
+    padding: 1em 3em;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: transform .25s linear;
+}
+
+.btn-accent {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-light {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-dark {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-accent:hover,
+.btn-accent:focus,
+.btn-light:hover,
+.btn-light:focus,
+.btn-dark:hover,
+.btn-dark:focus {
+    background: inherit;
+    border: 2px solid #fff;
+    color: hsla(0, 0%, 100%, 0.75);
+    /* letter-spacing: 2px; */
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 1020px) and (max-width: 1450px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    .card {
+        padding: 3em;
+    }
+
+    .card p {
+        margin-bottom: 3em;
+        margin-top: 2em;
+        max-width: 400px;
+    }
+}
